@@ -22,8 +22,41 @@ constraints:
 ## User Stories
 
 -   [x] User can enter up to 8 binary digits in one input field
--   [ ] User must be notified if anything other than a 0 or 1 was entered
+-   [x] User must be notified if anything other than a 0 or 1 was entered
 -   [ ] User views the results in a single output field containing the decimal (base 10) equivalent of the binary number that was entered
+    //psuedocode 
+    binary conversion table
+
+    2^0 = 1, 
+    2^1 = 2,
+    2^2 = 4,
+    2^3 = 8,
+    2^4 = 16,
+    2^5 = 32,
+    2^6 = 64,
+    2^7 = 128,
+    2^8 = 256
+
+    e.g input: 1011010
+    256 128 64 32 16 8 4 2 1
+            1  0  1  1 0 1 0         
+    sum total = 90.
+
+    Steps: 
+    for loop over input_values:
+        if(input_value == 0 ){
+            stop
+        }else{
+        value = (forloopindex * input_value)^forloopindex
+        Totalvalue += value
+        }
+    result totalvalue;
+
+
+
+    
+
+    
 
 ## Bonus features
 
@@ -34,4 +67,3 @@ constraints:
 [Binary number system](https://en.wikipedia.org/wiki/Binary_number)
 
 
-control flow:
